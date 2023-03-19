@@ -1,0 +1,40 @@
+Comandos Básicos
+
+Prompt ou na Shell
+
+- Mudardee pastas
+- Listar pastas
+- criar pastas/arquivos
+- deletar pastas/arquivos
+
+windows			Linux
+- cd			- cd
+- dir			- ls
+- mkdir			- mkdir
+- del / rmdir	- rm / rm -rf
+
+(rmdir [arquivo] /s/q )
+
+Git - Funcionamento
+-SHA1, algoritmos de hash seguro, encriptação gera conjunto de caracteres de 40 digitos
+Ex.:
+echo "ola mundo" | openssl sha1
+(stdin)= d9802fa01c4c1dfc4ddaf61f766d8d56ad8a8699
+
+-Objetos, três tipos basicos: blobs(bolhas), Trees(arvores), commits
+blobs, modulo básico do git, tem o conteudo do arquivo,tamanho do arquivo
+Trees, guadam blobs - tem uma chave - guarda o nome do arquivo, aponta para outra arvores
+
+-Sistemas
+-Segurança
+
+GIT
+- iniciar o git. - - - - > git init,
+- iniciarvercionamento. - - -> git add,
+- criar um commit.- - - -> git commit,
+
+git init dentro da pasta a ser utilizada como repositorio de versionamento
+linkar o gita uma conta:
+git config --global user.email "leogarcia.br@outlook.com"
+
+git config --global user.name Leonardo
