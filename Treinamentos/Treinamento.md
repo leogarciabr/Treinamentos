@@ -7,6 +7,6 @@
  - Ter foco;
  - Manter a disciplina no treinamento;
  - Superar os niveis de aprendizado;
- - Revisaar dúvidas;
+ - Revisar dúvidas;
  - Encrementar formas mais otimizadas para realizar o treinamento;
- - Persistir;
+ - Persistir.
