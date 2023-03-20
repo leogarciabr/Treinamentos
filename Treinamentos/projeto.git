@@ -55,3 +55,31 @@ roda o git add outra vez neste arquivo ele vai para o staged, o staged se prepar
 
 untracked - arquivo não rastreado pelo git
 
+Sistema distribuido de versionamento - GIT
+
+Servidor - Repositório remoto(github)
+
+Ambiente de Desenvolvimento:
+diretorio de trabalho -  Área de atuação  -  Repositório local(GIT)
+
+GITHUB
+
+git add [nomedo arquivo] [pasta]/
+
+git config --list
+
+…or create a new repository on the command line
+
+echo "# Backup" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin git@github.com:leogarciabr/Backup.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:leogarciabr/Backup.git
+git branch -M master
+git push -u origin master
