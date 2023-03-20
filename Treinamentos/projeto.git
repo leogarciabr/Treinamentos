@@ -95,3 +95,8 @@ gerar nova chave ssh
 ssh-keygen -t ed25519 -C "email@ns.com"
 
 Obs.: pegar a chave pública
+
+eval$(ssh-agent -s)
+
+ir na pasta dos arquivos criptografacos e executar o comando:
+ssh-add id_xxxxxxx
