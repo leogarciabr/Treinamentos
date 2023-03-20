@@ -1,0 +1,104 @@
+Comandos Básicos
+
+Prompt ou na Shell
+
+- Mudardee pastas
+- Listar pastas
+- criar pastas/arquivos
+- deletar pastas/arquivos
+
+windows			Linux
+- cd			- cd
+- dir			- ls
+- mkdir			- mkdir
+- del / rmdir	- rm / rm -rf
+
+(rmdir [arquivo] /s/q )
+
+Git - Funcionamento
+-SHA1, algoritmos de hash seguro, encriptação gera conjunto de caracteres de 40 digitos
+Ex.:
+echo "ola mundo" | openssl sha1
+(stdin)= d9802fa01c4c1dfc4ddaf61f766d8d56ad8a8699
+
+-Objetos, três tipos basicos: blobs(bolhas), Trees(arvores), commits
+blobs, modulo básico do git, tem o conteudo do arquivo,tamanho do arquivo
+Trees, guadam blobs - tem uma chave - guarda o nome do arquivo, aponta para outra arvores
+
+-Sistemas
+-Segurança
+
+GIT
+- iniciar o git. - - - - > git init, criamos um repositório
+- iniciarvercionamento. - - -> git add,
+- criar um commit.- - - -> git commit,
+
+git init dentro da pasta a ser utilizada como repositorio de versionamento
+linkar o gita uma conta:
+git config --global user.email "leogarcia.br@outlook.com"
+
+git config --global user.name Leonardo
+
+Colocando arquivos no repositorio
+git add *
+
+git commit -m "commit iniciando"
+
+Funcionamento git
+
+init
+tracked - arquivos rastrados pelo git
+unmodified(arquivo que ainda não foi modificado), modified(arquivo que sofreu modificação), staged(Conceito chave - arquivos que se preparam para fazer parte de outro agrupamento)
+"ao fazer o git add movemos o arquivo de untrackad para o staged"
+"guando vc fazr a primeira modificação do seu arquivo ele sai do unmodifield para modifield"
+roda o git add outra vez neste arquivo ele vai para o staged, o staged se prepara para ser um commit"
+
+untracked - arquivo não rastreado pelo git
+
+Sistema distribuido de versionamento - GIT
+
+Servidor - Repositório remoto(github)
+
+Ambiente de Desenvolvimento:
+diretorio de trabalho -  Área de atuação  -  Repositório local(GIT)
+
+GITHUB
+
+git add [nomedo arquivo] [pasta]/
+
+git config --list
+
+…or create a new repository on the command line
+
+echo "# Backup" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin git@github.com:leogarciabr/Backup.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:leogarciabr/Backup.git
+git branch -M master
+git push -u origin master
+
+
+git remote add origin git@github.com:leogarciabr/Backup.git
+git remove -v - verifica o registro
+
+git config --global --unset user.email - apaga seu registro de email
+git config --global --unset user.name - apaga seu registro de nome
+
+gerar nova chave ssh
+ssh-keygen -t ed25519 -C "email@ns.com"
+
+Obs.: pegar a chave pública
+
+eval$(ssh-agent -s)
+
+ir na pasta dos arquivos criptografacos e executar o comando:
+ssh-add id_xxxxxxx
+
+
