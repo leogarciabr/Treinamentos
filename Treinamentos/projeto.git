@@ -29,7 +29,7 @@ Trees, guadam blobs - tem uma chave - guarda o nome do arquivo, aponta para outr
 -Segurança
 
 GIT
-- iniciar o git. - - - - > git init,
+- iniciar o git. - - - - > git init, criamos um repositório
 - iniciarvercionamento. - - -> git add,
 - criar um commit.- - - -> git commit,
 
@@ -38,3 +38,20 @@ linkar o gita uma conta:
 git config --global user.email "leogarcia.br@outlook.com"
 
 git config --global user.name Leonardo
+
+Colocando arquivos no repositorio
+git add *
+
+git commit -m "commit iniciando"
+
+Funcionamento git
+
+init
+tracked - arquivos rastrados pelo git
+unmodified(arquivo que ainda não foi modificado), modified(arquivo que sofreu modificação), staged(Conceito chave - arquivos que se preparam para fazer parte de outro agrupamento)
+"ao fazer o git add movemos o arquivo de untrackad para o staged"
+"guando vc fazr a primeira modificação do seu arquivo ele sai do unmodifield para modifield"
+roda o git add outra vez neste arquivo ele vai para o staged, o staged se prepara para ser um commit"
+
+untracked - arquivo não rastreado pelo git
+
