@@ -100,3 +100,5 @@ eval$(ssh-agent -s)
 
 ir na pasta dos arquivos criptografacos e executar o comando:
 ssh-add id_xxxxxxx
+
+
